@@ -19,7 +19,6 @@ from readiness.dimensions import (
     score_volume,
 )
 
-
 # ---------------------------------------------------------------------------
 # completeness
 # ---------------------------------------------------------------------------
@@ -169,7 +168,6 @@ def test_governance_undeclared_pii():
 # ---------------------------------------------------------------------------
 
 def test_rag_ignores_label_weight():
-    cfg_weights = {"label_quality": 0.0}
     from readiness.scorer import USE_CASES
     assert USE_CASES["rag_documents"]["weights"]["label_quality"] == 0.0
     ds = make_support_docs(quality="good")

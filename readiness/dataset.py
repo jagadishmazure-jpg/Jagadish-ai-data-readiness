@@ -122,7 +122,7 @@ def make_meter_telemetry(
         n = min(n, 80)
     rng = random.Random(seed)
     rows: List[Dict[str, Any]] = []
-    for i in range(n):
+    for _ in range(n):
         # "good" telemetry stays within the forecasting cadence (7 days)
         days_ago = rng.randint(0, 6)
         if quality == "stale":

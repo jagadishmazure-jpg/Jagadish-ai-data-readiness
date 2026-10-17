@@ -84,8 +84,7 @@ def score_completeness(
 # 2. label quality
 # ---------------------------------------------------------------------------
 
-_BINARY_TOKENS = {0, 1, "0", "1", True, False,
-                  "yes", "no", "Yes", "No", "YES", "NO"}
+_BINARY_TOKENS = {0, 1, "0", "1", "yes", "no", "Yes", "No", "YES", "NO"}
 
 
 def score_label_quality(
